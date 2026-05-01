@@ -1,4 +1,5 @@
 import 'package:chat_app/Screens/DashBoard/Chat/Chats_Screen_Controller.dart';
+import 'package:chat_app/Screens/DashBoard/Chat/Contact_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -9,6 +10,13 @@ class Chats_Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Chats Screen")));
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Get.to(Contact_Screen());
+        },
+        child: Icon(Icons.add),
+      ),
+    );
   }
 }

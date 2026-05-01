@@ -5,6 +5,7 @@ import '../../Utils/App_colors.dart';
 import 'Call/Calls_Screen.dart';
 import 'Chat/Chats_Screen.dart';
 import 'DashBoard_Controller.dart';
+import 'Setting/Setting_Screen.dart';
 
 class DashBoard_Screen extends StatelessWidget {
   DashBoard_Screen({super.key});
@@ -17,7 +18,7 @@ class DashBoard_Screen extends StatelessWidget {
       Chats_Screen(),
       Calls_Screen(),
       Calls_Screen(),
-      Calls_Screen(),
+      Setting_Screen(),
     ];
 
     return Obx(() {
@@ -63,7 +64,7 @@ class DashBoard_Screen extends StatelessWidget {
                     ),
                   ),*/
                   icon: SizedBox.shrink(),
-                  label: "Home",
+                  label: "Chats",
                 ),
                 BottomNavigationBarItem(
                   /*  icon: SvgPicture.asset(
@@ -81,7 +82,7 @@ class DashBoard_Screen extends StatelessWidget {
                     ),
                   ),*/
                   icon: SizedBox.shrink(),
-                  label: "Services",
+                  label: "Calls",
                 ),
                 BottomNavigationBarItem(
                   /* icon: SvgPicture.asset(
@@ -99,7 +100,7 @@ class DashBoard_Screen extends StatelessWidget {
                     ),
                   ),*/
                   icon: SizedBox.shrink(),
-                  label: "Bookings",
+                  label: "Calls",
                 ),
                 BottomNavigationBarItem(
                   /* icon: SvgPicture.asset(
@@ -117,7 +118,7 @@ class DashBoard_Screen extends StatelessWidget {
                     ),
                   ),*/
                   icon: SizedBox.shrink(),
-                  label: "Profile",
+                  label: "Setting",
                 ),
               ],
             ),

@@ -4,6 +4,13 @@ import 'package:get/get.dart';
 import '../Sign In/Model/UserModel.dart';
 
 class Utils {
+  // firebase
+
+  static const String appName = "Chat App";
+  static const String Users = "User";
+  static const String Google_Sign_In = "Google Sign In Users";
+  static const String Phone_Sign_In = "Phone Sign In Users";
+
   // GoogleSign
 
   static const String serverClientId =
